@@ -1,7 +1,5 @@
 # NDI_data_streaming
 
-  Streaming NDI  data to Webex Space
-
   The Nexus Dashboard Insights service offers seamless integration with third-party applications, including Kafka, by streaming data to an existing Kafka bus. It utilizes a push mechanism to efficiently   transmit data, encoding messages in JSON format to ensure compatibility and ease of use.
 
   The data streamed by NDI can be retrieved from the Kafka server and can be posted to chat space of applications such as Webex Teams, enabling real-time alerting use cases tailored to customer needs.
@@ -36,7 +34,29 @@
   
 # Step 3: Python Script for Consuming Messages from Kafka server and Sending Them to WebEx.
 
-
+  A Python script listens to messages on a Kafka bus and posts them as a specific user to a designated WebEx room for testing. You can extend this functionality by filtering messages for different rooms   or using a WebEx bot to handle the task. Learn more about WebEx API, bots, and integrations at https://developer.webex.com.
   
+  Acquire a BEARER-TOKEN for accessing the WebEx API and the WebEx room ID where messages will be posted.
+  
+  -  To obtain the BEARER-TOKEN, refer to the steps outlined in the "Getting Started with the Webex API" guide: https://developer.webex.com/docs/getting-started
+  -  To obtain the WebEx room ID:
+        + Go to https://developer.webex.com/docs/api/v1/rooms/list-rooms
+        + Use a personal access token; otherwise, all rooms will be retrieved.
+        + Paste the access token generated in the previous step into the Bearer field.
+        + You should see one or two rooms listed. Identify the room with the correct name and copy its ID into the room_id field within the Alertmanager configuration for WebEx.
+          
+  -  Alternatively to obtain the WebEx room ID you can also use the scrip "get_webex_room_id.ipynb" uploaded on this respository.
+    
+  -  You can also create a bot to send message to your webex room.
+      +  Go to: https://developer.webex.com/my-apps
+      +  Create a new Bot
+      +  (Re)generate Access Token: This the token you set in the credentials field of Alertmanager config for Webex
+      +  Add the Bot to the Webex Space
+          *  Go to People
+          *  Add People
+          *  Search the name of your Bot
+            
+  -  Utilize the BEARER-TOKEN and ROOMID obtained in the earlier steps in the python script "consume_n_post.ipynb" to  stream alerts  to ur Webex space.
+    
 
   
