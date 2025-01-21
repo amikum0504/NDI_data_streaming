@@ -32,7 +32,7 @@
   Topic Name
   Authentication Mode
   
-# Step 3: Python Script for Consuming Messages from Kafka server and Sending Them to WebEx.
+# Step 3: Python Script for Consuming Messages from Kafka server and post to WebEx.
 
   A Python script listens to messages on a Kafka bus and posts them as a specific user to a designated WebEx room for testing. You can extend this functionality by filtering messages for different rooms   or using a WebEx bot to handle the task. Learn more about WebEx API, bots, and integrations at https://developer.webex.com.
   
