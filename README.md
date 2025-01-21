@@ -1,4 +1,4 @@
-# NDI_data_streaming
+# NDI_Data_Streaming
 
   The Nexus Dashboard Insights service offers seamless integration with third-party applications, including Kafka, by streaming data to an existing Kafka bus. It utilizes a push mechanism to efficiently   transmit data, encoding messages in JSON format to ensure compatibility and ease of use.
 
