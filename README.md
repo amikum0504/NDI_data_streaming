@@ -57,7 +57,7 @@
           *  Search the name of your Bot
             
   -  Utilize the **BEARER-TOKEN** and **ROOMID** obtained in the earlier steps in the python script ***consume_n_post.py*** to  stream alerts  to ur Webex space.
-      + you can also use the modified script ***consume_n_post_limited_info.py*** to send filtered messages to webex space rather than the entire detailled report of each alert/info.
+      + you can also use the modified script ***consume_n_post_limited_info.py*** to send filtered messages to webex space rather than the entire detailled report of each alert.
     
 
   
