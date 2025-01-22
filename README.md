@@ -45,7 +45,7 @@
         + Paste the access token generated in the previous step into the Bearer field.
         + You should see one or two rooms listed. Identify the room with the correct name and copy its ID into the room_id field within the Alertmanager configuration for WebEx.
           
-  -  Alternatively to obtain the WebEx room ID you can also use the scrip ***get_webex_room_id.py*** uploaded on this respository.
+  -  Alternatively to obtain the WebEx room ID you can also use the script ***get_webex_room_id.py*** uploaded on this respository.
     
   -  You can also create a bot to send message to your webex room.
       +  Go to: https://developer.webex.com/my-apps
