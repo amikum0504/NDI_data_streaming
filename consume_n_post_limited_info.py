@@ -11,8 +11,8 @@ KAFKA_GROUP_ID = 'my-group'   # Replace with your Kafka group id
 
 # Webex API Configuration
 WEBEX_API_URL = "https://webexapis.com/v1/messages"
-WEBEX_ACCESS_TOKEN = 'Bearer NGRlMjdlZjMtMTFjMC00NTgyLWIxYTYtMGM1NzAYzlmOGUtMDU2_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'  # Replace with your Webex API token
-WEBEX_ROOM_ID = 'Y2lzY29zcGFyazovL3VzL1JPT00vOWzNS0xMWVmLTgwOTItNWZhNzE1ZTQyMjZi'  # Replace with your Webex Room ID
+WEBEX_ACCESS_TOKEN = 'Bearer your_Webex_API_Token'  # Replace with your Webex API token
+WEBEX_ROOM_ID = 'your_room_id'  # Replace with your Webex Room ID
 
 # Webex Headers
 headers = {
