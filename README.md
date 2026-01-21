@@ -1,12 +1,12 @@
-# NDI_Data_Streaming
+# ND_Data_Streaming
 
-  The Nexus Dashboard Insights service offers seamless integration with third-party applications, including Kafka, by streaming data to an existing Kafka bus. It utilizes a push mechanism to efficiently   transmit data, encoding messages in JSON format to ensure compatibility and ease of use.
+  The Nexus Dashboard offers seamless integration with third-party applications, including Kafka, by streaming data to an existing Kafka bus. It utilizes a push mechanism to efficiently   transmit data, encoding messages in JSON format to ensure compatibility and ease of use.
 
   The data streamed by ND can be retrieved from the Kafka server and can be posted to chat space of applications such as Webex Teams, enabling real-time alerting use cases tailored to customer needs.
 
-# Step 1: Prerequisites for NDI Configuration with Kafka
+# Step 1: Prerequisites for ND Configuration with Kafka
 
-  Before configuring Nexus Dashboard Insights (NDI) with Kafka, follow these steps to ensure you setup the Kafka server:
+  Before configuring Nexus Dashboard with Kafka, follow these steps to ensure you setup the Kafka server:
 
   Gain a general understanding of Kafka concepts, terminology, and configuration.
   Refer to the Kafka documentation https://kafka.apache.org/documentation/
