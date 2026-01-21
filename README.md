@@ -2,7 +2,7 @@
 
   The Nexus Dashboard Insights service offers seamless integration with third-party applications, including Kafka, by streaming data to an existing Kafka bus. It utilizes a push mechanism to efficiently   transmit data, encoding messages in JSON format to ensure compatibility and ease of use.
 
-  The data streamed by NDI can be retrieved from the Kafka server and can be posted to chat space of applications such as Webex Teams, enabling real-time alerting use cases tailored to customer needs.
+  The data streamed by ND can be retrieved from the Kafka server and can be posted to chat space of applications such as Webex Teams, enabling real-time alerting use cases tailored to customer needs.
 
 # Step 1: Prerequisites for NDI Configuration with Kafka
 
@@ -21,7 +21,7 @@
     Topic Name: <Topic_Name>
     Ensure your Kafka setup aligns with these prerequisites before proceeding to the next step.
     
-# Step 2:Configure NDI Message Bus
+# Step 2:Configure ND Message Bus
 
   Navigate to the System Settings tab on the Nexus Dashboard.
   Select Message Bus Configuration.
@@ -31,6 +31,9 @@
   Port
   Topic Name
   Authentication Mode
+
+  Add the message Bus under the Fabric, Go to **Manage > Fabric > Edit Fabric Settings > External Streaming > Message bus**.
+  Select the Message Bus and modify the **collection settings** as per you need, select the ctaegory of anomaly/advisories you want to stream.
   
 # Step 3: Python Script for Consuming Messages from Kafka server and post to WebEx.
 
